@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<head>
+  <script type="text/javascript" src="sierpinski_triangle.js"></script>
+</head>
+<body>
+  <script>
+    var canvas = document.createElement("canvas");
+    canvas.setAttribute("width", Sierpinski.Triangle.DIM);
+    canvas.setAttribute("height", Sierpinski.Triangle.DIM);
+
+    var body = document.getElementsByTagName("body")[0];
+    body.appendChild(canvas);
+
+    var builder = new Sierpinski.Triangle(canvas.getContext("2d"));
+    var n = prompt("How hard can you triforce?");
+    builder.fractal_iteration(n);
+  </script>
+</body>
