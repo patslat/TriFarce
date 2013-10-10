@@ -93,7 +93,6 @@
 
     //draw them
     for (var i = 0; i < this.triangles.length; i++) {
-      console.log(this.triangles[i]);
       this.draw(this.triangles[i])
     }
   }
